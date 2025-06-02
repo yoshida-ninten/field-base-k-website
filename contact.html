@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>お問い合わせ - Field Base K</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Field Base Kへのお問い合わせはこちらから。キャンピングカーのご予約、ご質問などお気軽にご連絡ください。">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/Logo.png" alt="Field Base K ロゴ"></a>
+        </div>
+        <nav class="global-nav">
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="vehicle.html">車両紹介</a></li>
+                <li><a href="pricing.html">料金プラン</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-page-header">
+            <div class="container">
+                <h1>お問い合わせ</h1>
+                <p>キャンピングカーのご利用に関するご質問、ご予約のご相談など、お気軽にお問い合わせください。</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="form-container">
+                        <h2><i class="fas fa-envelope-open-text"></i> お問い合わせフォーム</h2>
+                        <p>以下のフォームにご入力の上、送信してください。担当者より折り返しご連絡いたします。<br>（※は必須項目です）</p>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">お名前 ※</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">メールアドレス ※</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">電話番号</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="departure-date">ご出発希望日</label>
+                                <input type="date" id="departure-date" name="departure_date">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="number-of-people">ご利用人数</label>
+                                <input type="number" id="number-of-people" name="number_of_people" min="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inquiry-type">お問い合わせ種別 ※</label>
+                                <select id="inquiry-type" name="inquiry_type" required>
+                                    <option value="">選択してください</option>
+                                    <option value="ご予約について">ご予約について</option>
+                                    <option value="車両について">車両について</option>
+                                    <option value="料金について">料金について</option>
+                                    <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">お問い合わせ内容 ※</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+
+                            <div class="form-group privacy-consent">
+                                <input type="checkbox" id="privacy" name="privacy" value="agreed" required>
+                                <label for="privacy" class="checkbox-label">プライバシーポリシーに同意する ※</label>
+                                <p class="privacy-link-placeholder">(別途プライバシーポリシーを掲載予定です)</p>
+                            </div>
+
+                            <div class="form-group submit-button-container">
+                                <button type="submit" class="button button-primary">送信する</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-container">
+                        <h2><i class="fas fa-info-circle"></i> ご連絡先・その他</h2>
+                        <div class="contact-info-item">
+                            <h3><i class="fas fa-phone-alt"></i> お電話でのお問い合わせ</h3>
+                            <p>TEL: <a href="tel:000-0000-0000">000-0000-0000</a></p>
+                            <p>（受付時間：平日 9:00～18:00）</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3><i class="fas fa-envelope"></i> メールでのお問い合わせ</h3>
+                            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3><i class="fas fa-map-marker-alt"></i> 事業所所在地（仮）</h3>
+                            <p>〒XXX-XXXX 滋賀県大津市〇〇町1-2-3</p>
+                            <p>（ご来店の際は事前にご連絡ください）</p>
+                            </div>
+                        <div class="contact-info-item">
+                            <h3><i class="fas fa-clock"></i> 営業時間（仮）</h3>
+                            <p>平日: 9:00 ～ 18:00</p>
+                            <p>定休日: 土日祝</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer>
+    <div class="footer-container container">
+        <div class="footer-column about-us">
+            <h4>Field Base K</h4>
+            <p>「ちょうどいい」が詰まったキャンピングカーで、あなただけの自由な旅を。</p>
+            <p><i class="fas fa-map-marker-alt"></i> 〒XXX-XXXX 滋賀県大津市〇〇町1-2-3 (仮)</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:000-0000-0000">000-0000-0000</a> (仮)</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a> (仮)</p>
+        </div>
+
+        <div class="footer-column site-links">
+            <h4>サイトメニュー</h4>
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="vehicle.html">車両紹介 (Jeepny type X)</a></li>
+                <li><a href="pricing.html">料金プラン</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="#">プライバシーポリシー (仮)</a></li>
+                <li><a href="#">利用規約 (仮)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column social-media">
+            <h4>フォローする</h4>
+            <div class="social-icons">
+                <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            <p class="social-message">最新情報やお得なキャンペーンをチェック！</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Field Base K. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
