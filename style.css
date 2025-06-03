@@ -838,6 +838,7 @@ footer {
 
 .showcase-content-area {
     padding: 20px 0; /* テキストエリア内の上下余白 */
+    text-align: center;
 }
 
 .showcase-title {
